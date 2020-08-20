@@ -75,7 +75,7 @@ userSchema.methods.generateToken = function(callback) { // jsonwebtoken을 이�
     })// user._id + 'secretToken = token
 }
 
-userSchema.methods.findByToken = function(token, callback) {
+userSchema.statics.findByToken = function(token, callback) {
     var user = this;
 
     // token을 decode

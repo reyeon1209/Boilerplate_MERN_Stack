@@ -9,7 +9,7 @@ let auth = (req, res, next) => {    // 인증 처리
         if (err) throw err;
 
         // user가 없으면 인증 실패
-        if (!user) return res.json({ isAuth: false, error: true })
+        if (!user) return res.json({ isAuth: false, error: true });
 
         // user가 있으면 인증 성공
         req.token = token;
