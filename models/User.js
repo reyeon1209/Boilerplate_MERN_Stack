@@ -47,6 +47,8 @@ userSchema.pre('save', function(next) { // user model에 user 정보를 저장�
                 next()  // index.js에 user.save부분으로 넘어감
             })
         })
+    } else {
+        next()
     }
 })
 
