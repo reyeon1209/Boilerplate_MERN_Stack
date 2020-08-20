@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const bcrypt = require('bcrypt')
+const saltRounds = 10  // 10자리인 salt
 
 const userSchema = mongoose.Schema({
     name: {
@@ -28,6 +30,23 @@ const userSchema = mongoose.Schema({
     },
     tokenExp: { // token 유효기간
         type: Number
+    }
+})
+
+userSchema.pre('save', function(next) { // user model에 user 정보를 저장하기 전에 할 일
+    var user = this;
+
+    if (user.isModified('password')) {  // 비밀번호가 변경되면 암호화
+        bcrypt.genSalt(saltRounds, function(err, salt) {
+            if (err) return next(err)
+    
+            bcrypt.hash(user.password, salt, function(err, hash) {
+                if (err) return next(err)
+    
+                user.password = hash;
+                next()  // index.js에 user.save부분으로 넘어감
+            })
+        })
     }
 })
 
