@@ -4,8 +4,6 @@
   "description": "<p align=\"center\">\r   <a href=\"https://github.com/reyeon1209/NodeJS_ReactJS\">\r     <img src=\"https://user-images.githubusercontent.com/46713032/85989157-1b252280-ba2b-11ea-9313-5976c8e8253b.png\" alt=\"Web Logo\" width=\"72\" height=\"72\">\r   </a>\r </p>",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "backend": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
