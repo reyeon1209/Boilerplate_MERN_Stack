@@ -54,8 +54,6 @@ userSchema.pre('save', function(next) { // user model에 user 정보를 저장�
 })
 
 userSchema.methods.comparePassword = function(plainPassword, callback) {
-    console.log(this.password);
-
     bcrypt.compare(plainPassword, this.password, function(err, isMatch) {
         if (err) return callback(err);
 
