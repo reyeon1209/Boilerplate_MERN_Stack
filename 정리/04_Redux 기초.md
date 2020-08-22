@@ -21,6 +21,7 @@
 하위 Component에서 Action이 생겨서 변화를 알려줄 때
 - Redux가 없으면 하나하나 올라가야함
 - Redux Store에 저장해두면 바로 Store에 직접 접근 가능
+- Store : Application의 State을 감싸주는 역할, 안에 있는 여러 method들을 이용해서 state을 관리  
 
 * * * 
 
