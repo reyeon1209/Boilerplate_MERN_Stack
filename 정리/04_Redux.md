@@ -1,13 +1,13 @@
 # Redux
 
 ### Props vs State
-##### Props (Properties)
+#### Props (Properties)
 - Component 사이에 talk할 때 Props 이용
 - 소통 방식 : 위 → 아래(부모 Component → 자식 Component)
 - immutable, 바꾸기 위해서는 다시 부모에서 받아야함  
 ![image](https://user-images.githubusercontent.com/46713032/90952027-19139900-e49b-11ea-855e-07cefbe62bd7.png)  
 
-##### State
+#### State
 - Component 안에서 Data 교환/전달
 - mutable, 내부에서 변할 수 있음
 - state이 변하면 re-render  
