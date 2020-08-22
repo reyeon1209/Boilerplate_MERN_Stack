@@ -26,6 +26,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/api/hello', (req, res) => {
+  res.send("안녕하세요~")
+})
+
+
 app.post('/api/users/register', (req, res) => { // 회원 가입 시 필요한 정보들을 client에서 가져오면 해당 정보를 DB에 넣어주기
   const user = new User(req.body) // req.body안에는 json형식이 들어있음
   user.save((err, doc) => { // 정보들이 user DB에 저장
