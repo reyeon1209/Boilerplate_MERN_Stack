@@ -1,10 +1,10 @@
 # ReactJS란?
 
-<br>
 
 1. 페이스북에서 2013년도에 만든 Library
 2. Module과 비슷하게 Components로 이루어져 있어서 reuseable이 뛰어남
 3. Virtual DOM
+
 
 ### Real DOM vs Virtual DOM
 10개의 리스트가 있을 때, 그 중 리스트 한개가 update되면
