@@ -28,7 +28,7 @@ function LoginPage(props) {
                 if (response.payload.loginSuccess) {    // 로그인 성공하면
                     props.history.push('/') // root page로 이동
                 } else {
-                    alert('Error')
+                    alert('Failed To Sign In')
                 }
             })
     }

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "backend": "nodemon server/index.js",
+    "server": "nodemon server/index.js",
+    "client" : "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run backend\" \"cd ./client && npm run start\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
