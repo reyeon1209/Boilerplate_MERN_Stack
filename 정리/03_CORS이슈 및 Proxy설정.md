@@ -10,7 +10,7 @@ Client 부분이 없어서 POSTMAN을 이용해서 request를 보냈었음
 → [여러가지 해결 방법](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9) 중 Proxy  
   
 
-# CORS 이슈 및 Proxy 설정
+# CORS이슈 및 Proxy설정
 
 ![image](https://user-images.githubusercontent.com/46713032/90951861-afdf5600-e499-11ea-8223-b276910f4775.png)
 - User의 IP를 Proxy Server에서 임의로 변경 가능 → 받는 사람은 User의 실제 IP를 모름
