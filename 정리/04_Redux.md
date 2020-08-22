@@ -37,7 +37,7 @@
 ### Redux-Promise, Redux-thunk
 - Store에서 항상 Object 형식으로 Action을 받아야 하는데 Promise, Function 형식으로 오는 경우 Dispatch에게 해당 형식으로 받는 방법을 알려주는 Middleware  
 
-###
-- CombineReducer : 여러 Reducer들을 Root Reducer에서 하나로 합쳐줌  
+### CombineReducer
+- 여러 Reducer들을 Root Reducer에서 하나로 합쳐줌  
 ![image](https://user-images.githubusercontent.com/46713032/90952409-4150c700-e49e-11ea-8377-c7699de7f473.png)
 
