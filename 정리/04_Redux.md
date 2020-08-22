@@ -30,4 +30,14 @@
 - Action : 무엇이 일어났는지 설명하는 객체  
 ![image](https://user-images.githubusercontent.com/46713032/90952175-78be7400-e49c-11ea-8b44-7492a80945a2.png)  
 - Reducer : Action으로 인해 변한 State를 설명해줌, 이전 State과 Action Object 이후의 Next State을 Return  
-![image](https://user-images.githubusercontent.com/46713032/90952185-925fbb80-e49c-11ea-8f47-3247a1075c21.png)
+![image](https://user-images.githubusercontent.com/46713032/90952185-925fbb80-e49c-11ea-8f47-3247a1075c21.png)  
+
+* * *
+
+### Redux-Promise, Redux-thunk
+- Store에서 항상 Object 형식으로 Action을 받아야 하는데 Promise, Function 형식으로 오는 경우 Dispatch에게 해당 형식으로 받는 방법을 알려주는 Middleware  
+
+###
+- CombineReducer : 여러 Reducer들을 Root Reducer에서 하나로 합쳐줌  
+![image](https://user-images.githubusercontent.com/46713032/90952409-4150c700-e49e-11ea-8377-c7699de7f473.png)
+
