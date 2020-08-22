@@ -1,9 +1,8 @@
-import React from 'react'
-import { response } from 'express'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 
 function LandingPage() {
-    userEffect(() => {
+    useEffect(() => {
         axios.get('/api/hello').then(response=> { console.log(response) })
     }, [])
 
